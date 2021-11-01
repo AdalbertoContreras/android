@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -38,7 +39,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/ic_local_phone_black_24dp"
-                android:tint="@color/colorPrimary" />
+                app:tint="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/phone"
@@ -60,7 +61,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:src="@drawable/ic_email_black_24dp"
-                android:tint="@color/colorPrimary" />
+                app:tint="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/email"

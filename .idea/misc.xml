@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/mio/proyectos/ceiba/android/app/src/main/res/layout/activity_main.xml" value="0.15625" />
+        <entry key="..\:/mio/proyectos/ceiba/android/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/mio/proyectos/ceiba/android/app/src/main/res/layout/activity_post.xml" value="0.17980072463768115" />
+        <entry key="..\:/mio/proyectos/ceiba/android/app/src/main/res/layout/bar_layout.xml" value="0.22" />
+        <entry key="..\:/mio/proyectos/ceiba/android/app/src/main/res/layout/post_list_item.xml" value="0.22" />
+        <entry key="..\:/mio/proyectos/ceiba/android/app/src/main/res/layout/user_list_item.xml" value="0.33" />
       </map>
     </option>
   </component>

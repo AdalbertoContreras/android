@@ -2,9 +2,9 @@ package co.com.ceiba.mobile.pruebadeingreso.view;
 
 
 import androidx.test.espresso.ViewInteraction;
+import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import android.test.suitebuilder.annotation.LargeTest;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -106,9 +106,7 @@ public class Calificador {
         onView(allOf(withId(R.id.name))).check(matches(withText(endsWith("Leanne Graham"))));
         onView(allOf(withId(R.id.phone))).check(matches(withText("1-770-736-8031 x56442")));
 
-
         onView(allOf(withId(R.id.title), withText("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"))).check(matches(withText("sunt aut facere repellat provident occaecati excepturi optio reprehenderit")));
-
 
     }
 

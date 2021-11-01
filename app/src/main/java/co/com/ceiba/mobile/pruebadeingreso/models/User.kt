@@ -1,25 +1,36 @@
 package co.com.ceiba.mobile.pruebadeingreso.models
-
-class User {
-    var id: Int = 0
-    var username: String = ""
-    var email: String = ""
-    var address: Address? = null
-    var phone: String = ""
-    var website: String = ""
-    var company: Company? = null
+import com.google.gson.JsonObject
+import io.realm.annotations.PrimaryKey
+import io.realm.RealmObject;
+import io.realm.annotations.Required
 
 
+open class User: RealmObject {
 
-    constructor(id: Int, username: String, email: String, address: Address?, phone: String, website: String, company: Company?) {
-        this.id = id
-        this.username = username
-        this.email = email
-        this.address = address
-        this.phone = phone
-        this.website = website
-        this.company = company
-    }
+        companion object{
+                val idProperty = "id";
+                val nameProperty = "name";
+                val emailProperty = "email";
+                val phoneProperty = "phone";
+        }
+        @PrimaryKey
+        var id: Int = 0
+        @Required
+        var name: String = ""
+        @Required
+        var email: String = ""
+        @Required
+        var phone: String = ""
 
-    constructor()
+
+        constructor() : super()
+
+        constructor(json: JsonObject) : super() {
+                this.id = json.get(idProperty).asInt
+                this.name = json.get(nameProperty).asString
+                this.email = json.get(emailProperty).asString
+                this.phone = json.get(phoneProperty).asString
+        }
+
+
 }

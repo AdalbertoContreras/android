@@ -2,10 +2,8 @@ package co.com.ceiba.mobile.pruebadeingreso.helpers
 
 import android.content.Context
 import com.android.volley.*
-import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import javax.annotation.Nullable
 
 open class MySocialMediaSingleton {
 
@@ -35,7 +33,7 @@ open class MySocialMediaSingleton {
         getRequestQueue(context)?.add(req)
     }
 
-    fun consulta(url: String?, parametros: Map<String, String>?, stringListener: Response.Listener<String>, errorListener: Response.ErrorListener?): StringRequest? {
+    fun consultaGet(url: String?, parametros: Map<String, String>?, stringListener: Response.Listener<String>, errorListener: Response.ErrorListener?): StringRequest? {
         return object : StringRequest(Method.GET, url, stringListener, errorListener) {
             override fun getParams(): Map<String, String>? = parametros
             override fun setRetryPolicy(retryPolicy: RetryPolicy?): Request<*> {
